@@ -2,6 +2,7 @@ import oscP5.*;
 import netP5.*;
 
 /* *
+ * GAVI Prototype by Spiderlily(Jing Chun Tan) - 12/2014
  * Notes and drawing are synchronised by the Draw framerate.
  * 5 SoundChiper instances are used to enable independent parts.
  * Constrained randomness maintains a balance of order and variety.
@@ -65,7 +66,7 @@ void setup() {
   //important size, framerate and instrument setup
   size(displayWidth-100, displayHeight-100);  
   frameRate(random(8, 9));
-  background(80);
+  background(0);
   smooth();
 
   //sounds: 80=synth, 49=strings, 0=piano, 10=waterpiano, 30=owlcity, 40=sax, 49=strings, 100=fantasy, 105=crisp, 102=floaty, 101=ambient,
@@ -180,7 +181,7 @@ void draw() {
 void keyPressed() {
   if (keyCode == ENTER)
   {
-    background(50);
+    background(0);
     if (bkg == 0) {
       bkg = 255;
     } else {
