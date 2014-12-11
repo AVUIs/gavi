@@ -7,4 +7,4 @@ Draw shapes to play with different instruments and melodies.
 
 Screenshot:
 
-<img src=http://i.imgur.com/aaXIZ47.png>
+<img src=https://i.imgur.com/h8QxhZ5.png>
