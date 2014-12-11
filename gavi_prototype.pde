@@ -67,6 +67,9 @@ void setup() {
   size(displayWidth-100, displayHeight-100);  
   frameRate(random(8, 9));
   background(0);
+  //refresh text
+    fill(0);
+  rect(30, 40,500,500);
   smooth();
 
   //sounds: 80=synth, 49=strings, 0=piano, 10=waterpiano, 30=owlcity, 40=sax, 49=strings, 100=fantasy, 105=crisp, 102=floaty, 101=ambient,
@@ -157,6 +160,13 @@ void draw() {
   //if gesture is circle, trigger synth chords based on userPitchSet
   if (name == "triangle") {
     // fill(random(100));
+//refresh text
+  fill(0);
+  rect(30,0,width/5.5,height/20);
+  fill(255); 
+  noStroke();
+  text("Detected gesture: "+name, 30, 40);
+  
     drawTris();
     //  ellipse(mouseX+10,mouseY+10,random(30,40),random(30,40));
     float[] pitches = {
@@ -167,6 +177,12 @@ void draw() {
 
   //if gesture is triangle
   if (name == "circle") {
+    //refresh text
+  fill(0);
+  rect(30,0,width/5.5,height/20);
+  fill(255); 
+  noStroke();
+  text("Detected gesture: "+name, 30, 40);
     // fill(random(100));
     drawCircles();
     //  ellipse(mouseX+10,mouseY+10,random(30,40),random(30,40));
